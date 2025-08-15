@@ -83,4 +83,5 @@ SwiftData over Core Data for simpler syntax and iOS 17+ integration.
 Async/Await for cleaner asynchronous API calls.
 
 Dependency Injection for ModelContext in MovieListViewModel to make it testable.
+<img width="1206" height="2622" alt="HomeScreen" src="https://github.com/user-attachments/assets/3ac13d85-3ecc-4c25-a771-da4f330d734f" />
 
