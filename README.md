@@ -44,44 +44,52 @@ MovieExplorer/
 │ ├── MovieDetailView.swift # Detailed movie information
 ├── MovieExplorerApp.swift # App entry point
 
-Open in Xcode
-Double-click MovieExplorer.xcodeproj or open via Xcode → File → Open.
+2️⃣Open in Xcode
 
-Requires Xcode 15+ and iOS 17+
+1.Double-click MovieExplorer.xcodeproj or open via Xcode → File → Open.
 
-Get TMDB API Key
-Sign up at TMDB.
+2.Requires Xcode 15+ and iOS 17+.
 
-Go to your account → API → Request an API key.
+3️⃣Get TMDB API Key
 
-Replace the apiKey in NetworkManager.swift:
+1.Sign up at TMDB.
 
-private let apiKey = "06840463d3d25f8933cf00a9753e9ae1"
+2.Go to your account → API → Request an API key.
 
-Run the app
-Select your simulator or device in Xcode.
+3.Replace the apiKey in NetworkManager.swift:
 
-Press Cmd + R to build and run.
-ow Offline Support Works
-When movies are fetched from the API, they are stored in SwiftData using the Movie model.
+4.private let apiKey = "06840463d3d25f8933cf00a9753e9ae1"
 
-On app launch or network failure, the app loads movies from the local cache.
+4️⃣Run the app
 
-Refreshing replaces the old cache with the latest movies.
+1.Select your simulator or device in Xcode.
 
-Design Decisions
-MVVM Architecture was chosen for clear separation of concerns:
+2.Press Cmd + R to build and run.
 
-Model → SwiftData Movie + API DTO structs
+📡 How Offline Support Works
 
-ViewModel → Handles fetching, caching, filtering
+1.When movies are fetched from the API, they are stored in SwiftData using the Movie model.
 
-View → SwiftUI UI components
+2.On app launch or network failure, the app loads movies from the local cache.
 
-SwiftData over Core Data for simpler syntax and iOS 17+ integration.
+3.Refreshing replaces the old cache with the latest movies.
 
-Async/Await for cleaner asynchronous API calls.
+🧠Design Decisions
 
-Dependency Injection for ModelContext in MovieListViewModel to make it testable.
-<img width="1206" height="2622" alt="HomeScreen" src="https://github.com/user-attachments/assets/3ac13d85-3ecc-4c25-a771-da4f330d734f" />
+1.MVVM Architecture was chosen for clear separation of concerns:
+
+   1.Model → SwiftData Movie + API DTO structs
+
+   2.ViewModel → Handles fetching, caching, filtering
+
+   3.View → SwiftUI UI components
+
+2.SwiftData over Core Data for simpler syntax and iOS 17+ integration.
+
+3.Async/Await for cleaner asynchronous API calls.
+
+4.Dependency Injection for ModelContext in MovieListViewModel to make it testable.
+
+
+
 
