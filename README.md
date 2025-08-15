@@ -78,11 +78,11 @@ MovieExplorer/
 
 1.MVVM Architecture was chosen for clear separation of concerns:
 
-   1.Model → SwiftData Movie + API DTO structs
+        1.Model → SwiftData Movie + API DTO structs
 
-   2.ViewModel → Handles fetching, caching, filtering
+        2.ViewModel → Handles fetching, caching, filtering
 
-   3.View → SwiftUI UI components
+        3.View → SwiftUI UI components
 
 2.SwiftData over Core Data for simpler syntax and iOS 17+ integration.
 
